@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use SDE Ontology, please cite the tagged version of this repository."
+title: "SDE Ontology"
+type: software
+authors:
+  - family-names: "Wang"
+    given-names: "Desheng"
+    alias: "王德生"
+    email: "wangdesheng1234567@gmail.com"
+repository-code: "https://github.com/SIOWDS/SDE-Ontology"
+abstract: "A canonical, version-controlled presentation of SDE Ontology: Structural Disclosure State, Difference Sequence, and Entangled Feature System."
+keywords:
+  - SDE Ontology
+  - generative ontology
+  - emergence
+  - philosophy of science
+  - artificial intelligence
+license: "LicenseRef-Proprietary"
