@@ -6,7 +6,7 @@
 | 差异序列 | Difference Sequence | D |
 | 特征纠缠系统 | Entangled Feature System | E |
 | 发生 | Genesis / Emergence | 形成、显露、变化与再发生 |
-| 三方程 | Three Coupled Equations | S=F(D,E), D=H(S,E), E=G(S,D) |
+| 三方程 | Three Coupled Equations | S=F(D,E), D=G(S,E), E=H(S,D) |
 | 六路径 | Six Generative Paths | S、D、E 的六种有序排列 |
 | 主体 | Subjective Body | SIO 三号位 |
 | 互动体 | Interactive Body | SIO 二号位 |
