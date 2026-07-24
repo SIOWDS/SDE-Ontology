@@ -13,7 +13,7 @@ SDE does not treat S, D, and E as three isolated substances. They are three mutu
 ## Core equations｜核心三方程
 
 \[
-S=F(D,E),\qquad D=H(S,E),\qquad E=G(S,D)
+S=F(D,E),\qquad D=G(S,E),\qquad E=H(S,D)
 \]
 
 The first equation explains emergence, the second explains path formation, and the third explains environmental or relational rewriting. Together they reject one-way causation and describe a recursively coupled system.
@@ -48,6 +48,7 @@ Accordingly, SIO is best understood as one stabilized perspective on an SDE proc
 - `docs/02-six-paths.md` — six-path generative methodology｜六路径发生学
 - `docs/03-sde-and-sio.md` — relation between SDE and SIO｜SDE 与 SIO
 - `docs/glossary.md` — bilingual terminology｜中英术语表
+- `book/core-chapters/` — core chapters of *Introduction to SDE Ontology*｜《SDE本体论入门》核心章节
 - `CITATION.cff` — citation metadata｜引用元数据
 - `CONTRIBUTING.md` — contribution and terminology rules｜贡献规范
 
@@ -60,6 +61,10 @@ This repository is the canonical version-controlled presentation of SDE Ontology
 ## Citation｜引用
 
 Until a release DOI is assigned, cite this repository and the tagged release used. See `CITATION.cff`.
+
+## Published book chapters｜已发布著作章节
+
+- [《SDE本体论入门》核心章节](book/core-chapters/README.md) — 第5—12章，涵盖 S、D、E、意义三律、三方程、123原理、成熟态、六路径、六步法与九步法。
 
 ## License｜许可
 
