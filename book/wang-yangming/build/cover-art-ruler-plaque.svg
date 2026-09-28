@@ -1,0 +1,43 @@
+<!-- 《普通人都能读懂的王阳明》封面插图：一把尺与一张挂在门口的牌。900x1270 设计稿坐标，只用纯色，不用渐变。
+     尺＝判词里那把「量遍了万物，独独量不到自己」的尺，刻度一道一道，是在事上刻出来的；
+     牌＝副题那张挂在门口、写着每户实情、可外证的牌，挂在门外；
+     门缝里透出的那道金光，是「外面」——那个能说「你错了」的位置。 -->
+
+<!-- 门框与门扇：右侧，留出页边与金环 -->
+<rect x="666" y="508" width="188" height="540" fill="none" stroke="#f1e9d6" stroke-width="10"/>
+<rect x="671" y="513" width="178" height="530" fill="#f1e9d6"/>
+<rect x="666" y="513" width="11" height="530" fill="#e9c46e"/>
+<rect x="666" y="513" width="4" height="530" fill="#fbe7b0"/>
+<rect x="700" y="546" width="120" height="176" fill="none" stroke="#d6c6a0" stroke-width="4"/>
+<rect x="700" y="778" width="120" height="212" fill="none" stroke="#d6c6a0" stroke-width="4"/>
+
+<!-- 挂钩与绳：钩在门框外沿，牌整个垂在门外的暗处 -->
+<circle cx="657" cy="580" r="9" fill="#d4a84b"/>
+<line x1="654" y1="588" x2="530" y2="636" stroke="#3fb8c6" stroke-width="5"/>
+<line x1="659" y1="588" x2="612" y2="636" stroke="#3fb8c6" stroke-width="5"/>
+
+<!-- 牌：一户一户记下来的实情，挂在门口，谁都看得见 -->
+<rect x="506" y="636" width="150" height="120" rx="7" fill="#f1e9d6" stroke="#d4a84b" stroke-width="5"/>
+<rect x="528" y="664" width="106" height="6" fill="#d4a84b"/>
+<rect x="528" y="686" width="106" height="6" fill="#d4a84b"/>
+<rect x="528" y="708" width="106" height="6" fill="#d4a84b"/>
+<rect x="528" y="730" width="62" height="6" fill="#d4a84b"/>
+
+<!-- 尺：左侧立着，刻度朝外 -->
+<rect x="348" y="538" width="52" height="510" rx="4" fill="#f1e9d6"/>
+<rect x="348" y="538" width="52" height="510" rx="4" fill="none" stroke="#d6c6a0" stroke-width="3"/>
+<rect x="348" y="576" width="17" height="5" fill="#d4a84b"/>
+<rect x="348" y="614" width="17" height="5" fill="#d4a84b"/>
+<rect x="348" y="652" width="17" height="5" fill="#d4a84b"/>
+<rect x="348" y="690" width="17" height="5" fill="#d4a84b"/>
+<rect x="348" y="728" width="29" height="6" fill="#d4a84b"/>
+<rect x="348" y="766" width="17" height="5" fill="#d4a84b"/>
+<rect x="348" y="804" width="17" height="5" fill="#d4a84b"/>
+<rect x="348" y="842" width="17" height="5" fill="#d4a84b"/>
+<rect x="348" y="880" width="17" height="5" fill="#d4a84b"/>
+<rect x="348" y="918" width="29" height="6" fill="#d4a84b"/>
+<rect x="348" y="956" width="17" height="5" fill="#d4a84b"/>
+<rect x="348" y="994" width="17" height="5" fill="#d4a84b"/>
+
+<!-- 地线 -->
+<line x1="324" y1="1048" x2="866" y2="1048" stroke="#f1e9d6" stroke-opacity="0.35" stroke-width="2"/>
