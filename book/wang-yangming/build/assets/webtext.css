@@ -1,0 +1,50 @@
+:root{--paper:#fbf8f0;--ink:#2d2d2d;--navy:#1f3a5f;--gold:#b08a3c;--dim:#8a8578;--line:#e4dccb;--soft:#f3eee1}
+html.dark{--paper:#121518;--ink:#e3dfd6;--navy:#9fc0e6;--gold:#d9b45c;--dim:#8e949a;--line:#2a3036;--soft:#1a1f24}
+*{box-sizing:border-box}html{scroll-padding-top:64px}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/2 "Noto Serif CJK SC","Noto Serif SC","Songti SC",serif}
+.bar{position:sticky;top:0;z-index:5;display:flex;gap:.6rem;align-items:center;padding:.55rem 1rem;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);font:14px/1.4 "Noto Sans CJK SC",sans-serif}
+.bar a{color:var(--navy);text-decoration:none}.bar .sp{margin-left:auto}
+.bar button{font:inherit;background:none;border:1px solid var(--line);border-radius:6px;padding:.2rem .6rem;color:var(--ink);cursor:pointer}
+#prog{position:fixed;top:0;left:0;height:3px;background:var(--gold);width:0;z-index:6}
+.wrap{max-width:760px;margin:0 auto;padding:1.5rem 1.2rem 5rem}
+.hero{text-align:center;padding:2rem 0 1rem}.hero img{width:220px;border-radius:6px;box-shadow:0 18px 50px rgba(0,0,0,.25)}
+.hero h1{color:var(--navy);font-size:2rem;margin:1.2rem 0 .3rem}.hero p{color:var(--gold);margin:0;font-size:1rem;text-indent:0;text-align:center}
+details.toc{border:1px solid var(--line);border-radius:10px;padding:.6rem 1rem;margin:1.5rem 0 2rem;font-size:.92rem}
+details.toc summary{cursor:pointer;color:var(--navy);font-weight:700}
+details.toc ul{list-style:none;padding:0;margin:.6rem 0}details.toc li.p{margin-top:.6rem;font-weight:700}details.toc li.c{padding-left:1.4em}details.toc li.f{margin-top:.3rem}
+details.toc a{color:var(--ink);text-decoration:none}details.toc a:hover{color:var(--gold)}
+section{padding-top:1rem}
+.chapter,.front-sec,.back-sec{margin-top:3.2rem}
+.part{text-align:center;border-top:1px solid var(--line);padding-top:3rem;margin-top:4rem}
+.part-label,.chap-label{color:var(--gold);letter-spacing:.2em;font-size:.85rem;font-family:"Noto Sans CJK SC",sans-serif}
+.part-title{color:var(--navy);font-size:1.8rem;line-height:1.5;margin:.6rem 0}
+.part-intro{text-align:left;color:var(--dim)}
+.rule{width:3rem;border-top:2px solid var(--gold);margin:.6rem 0 1.6rem}.part .rule{margin:.8rem auto 1.4rem}
+h2{color:var(--navy);font-size:1.55rem;line-height:1.5;margin:.4rem 0}
+.fs-title{color:var(--navy);font-size:1.7rem;margin:1rem 0 .2rem;letter-spacing:.05em}
+.fs-sub{color:var(--gold);font-size:1rem;font-family:"Noto Sans CJK SC",sans-serif}
+p{margin:0 0 .9em;text-indent:2em;text-align:justify}
+strong{color:var(--navy)}
+.hk{font-size:.78em;color:var(--dim)}
+h3{color:var(--navy);font-size:1.15rem;margin:2.2rem 0 .8rem;line-height:1.6}h3 .dia{color:var(--gold);font-size:.8em}
+blockquote{margin:1rem 0;padding-left:1rem;border-left:3px solid var(--gold);color:var(--dim)}blockquote p{text-indent:0}
+blockquote.takeaway{border-left:none;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);padding:.6rem 0;color:var(--navy)}.tk-l{font-size:.8rem;letter-spacing:.3em;color:var(--gold);font-family:"Noto Sans CJK SC",sans-serif}
+blockquote.takeaway p{font-weight:700;color:var(--navy)}
+.ledger{font-size:.9rem;color:var(--dim);border-left:3px solid var(--gold);padding:.4rem .8rem;margin:1rem 0;background:var(--soft)}.ledger .lt{color:var(--navy);letter-spacing:.3em;font-size:.8rem}.ledger p{text-indent:0;margin:0}
+.tw{overflow-x:auto;margin:1rem 0}
+table{width:100%;border-collapse:collapse;font-size:.82rem;line-height:1.6}
+th{background:var(--navy);color:var(--paper);padding:.4rem;text-align:left}td{border-bottom:1px solid var(--line);padding:.4rem;vertical-align:top}
+ol,ul{padding-left:1.6em}li{line-height:1.9}
+.foot{margin-top:4rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--dim);font-size:.85rem;text-align:center}
+.foot a{color:var(--gold)}
+@media(max-width:600px){body{font-size:17px}.hero img{width:170px}}
+
+.chap-title,.front-title{color:var(--navy);font-size:1.55rem;line-height:1.5;margin:.4rem 0}
+.front-title{font-size:1.7rem}
+h2.sec{color:var(--navy);font-size:1.15rem;margin:2.2rem 0 .8rem;line-height:1.6}h2.sec .dia{color:var(--gold);font-size:.8em;margin-right:.3em}
+h2.appx{margin-top:3rem;font-size:1.35rem}h2.sub{font-size:1.3rem;margin-top:2rem}
+.bianxu{color:var(--gold);letter-spacing:.3em;font-size:.85rem;margin:1.2rem 0 .4rem;font-family:"Noto Sans CJK SC",sans-serif;text-align:left}
+p.takeaway{text-indent:0;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);padding:.6rem 0;margin-top:1.6rem}
+blockquote{background:var(--soft);padding:.5rem .9rem;border-radius:0 6px 6px 0}
+.orn{text-align:center;color:var(--gold)}
+.ledger p{text-indent:0} .part-intro p{color:var(--ink)} section.back-sec h3{font-size:1.05rem}
