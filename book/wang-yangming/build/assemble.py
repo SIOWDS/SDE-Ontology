@@ -59,6 +59,53 @@ def _cn_num(n: int) -> str:
             '十一', '十二', '十三', '十四', '十五'][n]
 
 
+# 成书规范（统稿清单第 4 条）：正文加粗减到 30 处上下，只留判词、各编总判断与全书
+# 最承重的几句。写作各轮按「每万字 15 处」收敛，到全书就是几百处，须在合成时再减一道。
+# 下面这些是留下来的——每句只留**第一次**出现的那一处，其余一律脱掉加粗，一个字不删。
+KEEP = [
+    '量遍了万物，独独量不到自己',          # 判词
+    '他不否认长，他只把产权记在胎里',      # 收回动作的分别
+    '尺是在事上刻出来的',                  # 梁一替换物
+    '事是铁的来处，也是新刀样式的来处',    # 梁二替换物
+    '验尺的位置，要空出来给别人',          # 梁三替换物
+    '这一处，是谁告诉他错了',              # 总钥匙
+    '自我＝自我',                          # 三界层定位式
+    '钉源型',                              # 方程塌缩型
+    '他分的是入口，不是路',                # 判决三收窄
+    '回写不许回到源头',                    # 判决四收窄
+    '磨不是判',                            # 第 38 章的分辨
+    '起源不定罪，起源只撤免检',            # 全书批评原则
+    '判的是一句话，不是一个人',            # 身后编纪律
+    '两场仗不通兑',                        # 第 43 章空格
+    '位置才能传',                          # 第 39 章的分辨
+]
+BOLD = re.compile(r'\*\*(.+?)\*\*')
+
+
+def debold(text: str) -> str:
+    """脱掉正文里多余的加粗；引用块、标题与模板件（带走的话、编序、小账）不动。"""
+    seen = set()
+    out = []
+    for ln in text.split('\n'):
+        s = ln.lstrip()
+        # 标题不动；模板件（带走的话、编序、小账的那一行）不动
+        if not s or s.startswith('#') or s.startswith(('**带走的话**', '**编序**')) \
+                or s.startswith('> **小账**'):
+            out.append(ln)
+            continue
+
+        def sub(m):
+            body = m.group(1)
+            for k in KEEP:
+                if k in body and k not in seen:
+                    seen.add(k)
+                    return m.group(0)
+            return body
+
+        out.append(BOLD.sub(sub, ln))
+    return '\n'.join(out)
+
+
 def clean(text: str) -> str:
     lines = text.split('\n')
     # 切掉文末工作清单
@@ -158,7 +205,7 @@ def main() -> int:
     if missing:
         print('缺文件：' + '、'.join(missing), file=sys.stderr)
         return 1
-    text = '\n\n'.join(parts)
+    text = debold('\n\n'.join(parts))
     pathlib.Path(a.out).write_text(text, encoding='utf-8')
     han = len(re.findall(r'[一-鿿]', text))
     chaps = len(re.findall(r'^## 第 \d+ 章', text, re.M))
